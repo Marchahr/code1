@@ -8,7 +8,8 @@ void setup() {
 void draw(){
   rect(width/2, height/2, 100, 100); 
   pushMatrix(); 
-  translate(width*.25, height*.25);
+  translate(width/2, height/2);
+  //translate(width*.25, height*.25);
   rotate(radians(45)); 
   rect(0,0, 100, 100); 
   popMatrix(); 

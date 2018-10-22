@@ -16,16 +16,26 @@ void draw() {
   for (int i = 0; i <= width; i += width/35) {
     for (int j = 0; j <= height; j += height/35) {
        //fill(0); 
-      ellipse(i, j, 20, 20);
+       
     float d = dist(mouseX, mouseY, i, j); 
 
-  if (d <= 10){
-    fill(255);
-  }else{
-    fill(0);
-
+       
+       if (d<(width/35/2)){
+      fill(255);
+    }else{
+      fill(0);
     }
-  }
- //<>//
-  }
+     
+      ellipse(i, j, 20, 20);
+
+  //if (d <= 10){
+  //  fill(255);
+  //}else{
+  //  fill(0);
+  //  }
+  
+    }
+  
+    }
+     //<>//
 }
