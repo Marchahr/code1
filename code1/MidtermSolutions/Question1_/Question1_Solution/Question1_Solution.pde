@@ -6,7 +6,7 @@
 
   String welcomeMsg = "welcome to the first midterm question!";
   
-  bool isCodeGreat = true;
+  boolean isCodeGreat = true;
  
  
 void setup() {
@@ -14,7 +14,7 @@ void setup() {
   
   println(welcomeMsg);
   
-  println('now we'll do a loop and print the iterating value!');
+  println("now we'll do a loop and print the iterating value!");
   for (int i = 0; i++; i < 3){
     println("this is loop number " i);
   }
