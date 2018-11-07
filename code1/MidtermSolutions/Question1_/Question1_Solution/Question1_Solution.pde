@@ -15,8 +15,13 @@ void setup() {
   println(welcomeMsg);
   
   println("now we'll do a loop and print the iterating value!");
+<<<<<<< HEAD
   for (int i = 0; i < 3; i++ ){
     println("this is loop number " + i);
+=======
+  for (int i = 0; i++; i < 3){
+    println("this is loop number " i);
+>>>>>>> 04c782568a2c07bf70f6c2b76dfae9dc98a8c4e0
   }
  
   println("there are " + floatArray.size() + " positions in floatArray");
