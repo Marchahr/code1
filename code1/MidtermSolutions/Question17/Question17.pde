@@ -13,8 +13,8 @@ void setup() {
   
   for (int i = 0; i < gridW; i++) {
     for (int j = 0; j < gridH; j++) {
-      greyColors[i][j] = map(j * gridW + i, 0, gridW * gridH, 0, 255);
-    }
+      greyColors[i][j] = map(j * gridW + i, 0, gridW * gridH, 0, 255);  
+  }
   }
 }
 
@@ -22,9 +22,10 @@ void draw() {
   background(0);
   for (int i = 0; i < gridW; i++) {
     for (int j = 0; j < gridH; j++) {
-       
-         if(greyColors[i][j]<=255){
-        greyColors[i][j]=greyColors[i][j];
+             greyColors[i][j]+=1;
+
+         if(greyColors[i][j]>=255){
+        greyColors[i][j]=0;
       }
       
       fill(greyColors[i][j]);

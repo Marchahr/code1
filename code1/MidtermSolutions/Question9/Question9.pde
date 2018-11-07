@@ -15,18 +15,19 @@ void setup() {
 void draw() {
   background(20);
   
-    int s = second();  // Values from 0 - 59
+  int s = second();  // Values from 0 - 59
   int m = minute();  // Values from 0 - 59
   int h = hour();    // Values from 0 - 23
   
   fill(255);
-  
   float hourPos = map(hour(), 0, 60, 0, width);
-  rect(hourPos,400, width/60, 600);
+  rect(hourPos,0, width/30, 200);
   
+  fill(125,125,125);
   float minutePos = map(minute(), 0, 60, 0, width);
-  rect(minutePos, 400, width/60, 600);
+  rect(minutePos,200, width/60, 200);
   
+  fill(205,205,205);
   float secondPos = map(second(), 0, 60, 0, width);
-  rect(secondPos, 400, width/60, 600);
+  rect(secondPos,400, width/60, 200);
 }

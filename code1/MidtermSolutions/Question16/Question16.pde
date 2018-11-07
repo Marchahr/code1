@@ -1,12 +1,15 @@
 int num = 100;
 
-int [] yPos = new int [num];
+float [] yPos = new float [num];
+float [] xPos = new float [num];
 
 void setup() {
   size(600, 600);
   
    for (int i = 0; i<num; i++){
-   yPos[i]= int(random(0,height));
+   //yPos[i]= i;
+   yPos[i] = map(i, 0, 100, 0, height);
+   xPos[i] = map(i,0,100,0,width);
    //yPos[i]= map(yPos, 0, 0, height, width);
    }
 }
@@ -14,8 +17,7 @@ void setup() {
 void draw() {
   background(240);
   for (int i = 0; i < num; i++) {
-//      float yPos = map(yPos, 0, 0, height, width);
-    ellipse(width/2, yPos[i], 50, 50);
+    ellipse(x, yPos[i], 50, 50);
     
   }
 }
