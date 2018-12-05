@@ -23,7 +23,9 @@ void draw(){
  }
   
   skyRaining.add(new Sky());
-  fill(255,210,0);
+ 
+//sun  
+fill(255,210,0);
 ellipse(40,40,125,125);
 
   
